@@ -23,6 +23,7 @@ const config: Config = {
         "light-purple": "#8675FF",
         "light-pink": " #FD7289",
         "light-gray": "#BACCFD",
+        gray: "#EBEEFF",
         "dark-gray": "#353E6C",
         aqua: "#16DBCC",
         "light-aqua": "#DCFAF8",
@@ -31,6 +32,9 @@ const config: Config = {
       },
       secondary: {
         "dark-text": "#2C2745",
+        "light-text": "#B9C0DE",
+        "blue-text": "#1C4EFF",
+        "page-header": "#3C3F88",
       },
     },
     extend: {
