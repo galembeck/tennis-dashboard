@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const ProfileSidebar = () => {
   return (
-    <div className="flex flex-col w-[400px] h-[537px] rounded-[30px] bg-primary-white">
+    <div className="flex flex-col sticky w-[400px] h-[537px] rounded-[30px] bg-primary-white">
       <div className="flex flex-col relative">
         <Image
           src="/assets/profile-sidebar-wave.svg"
@@ -84,7 +84,7 @@ export const ProfileSidebar = () => {
         alt="Players"
         width={307}
         height={486}
-        className="flex absolute right-0 mr-8"
+        className="flex absolute right-0"
       />
     </div>
   );
