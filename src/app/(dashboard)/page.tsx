@@ -1,4 +1,5 @@
 import { PageHeader } from "../../components/page-header";
+import { ProfileSidebar } from "../../components/profile-sidebar";
 
 export default function DashboardPage() {
   return (
@@ -7,6 +8,9 @@ export default function DashboardPage() {
         <header>
           <PageHeader />
         </header>
+        <div className="flex justify-end">
+          <ProfileSidebar />
+        </div>
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { sidebarLinks } from "@/constants";
 
 import { cn } from "@/lib/utils";
+
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 
@@ -72,21 +73,24 @@ export const Sidebar = () => {
           );
         })}
       </nav>
+
       <div className="flex-col px-6 mb-6 hidden xl:block">
-        <div className="flex flex-col items-center w-64 h-72 bg-primary-gray rounded-[30px] relative">
-          <Image
-            src="/assets/pro-feature-lock.svg"
-            alt="Pro Features"
-            width={215}
-            height={215}
-            className="absolute top-[-55px]"
-          />
-          <p className="absolute bottom-[80px] text-center px-12 text-secondary-dark-text">
-            Upgrade to{" "}
-            <span className="text-secondary-blue-text font-bold">PRO</span> for
-            more features
-          </p>
-          <Button className="w-[230px] h-[54px] rounded-2xl bg-primary-blue font-medium hover:bg-primary-blue/90 transition text-primary-white absolute bottom-[10px]">
+        <div className="flex flex-col items-center relative">
+          <div className="flex flex-col items-center w-64 h-72 bg-primary-gray rounded-[30px] relative 2xl:hidden">
+            <Image
+              src="/assets/pro-feature-lock.svg"
+              alt="Pro Features"
+              width={215}
+              height={215}
+              className="absolute top-[-55px]"
+            />
+            <p className="absolute bottom-[80px] text-center px-12 text-secondary-dark-text">
+              Upgrade to{" "}
+              <span className="text-secondary-blue-text font-bold">PRO</span>{" "}
+              for more features
+            </p>
+          </div>
+          <Button className="w-[230px] h-[54px] rounded-2xl bg-primary-blue font-medium hover:bg-primary-blue/90 transition text-primary-white absolute bottom-[10px] 2xl:-mb-6">
             Upgrade
           </Button>
         </div>
