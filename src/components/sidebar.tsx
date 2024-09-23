@@ -15,7 +15,7 @@ export const Sidebar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="w-fit bg-primary-white sticky left-0 top-0 flex h-fit flex-col justify-between border-r border-gray-200 text-white max-md:hidden 2xl:w-[355px]">
+    <div className="w-fit bg-primary-white sticky left-0 top-0 flex h-screen 2xl:overflow-y-auto no-scrollbar flex-col justify-between border-r border-gray-200 text-white max-md:hidden 2xl:w-[355px]">
       <nav className="flex flex-col gap-3 pt-10 pl-10 sm:p-6 xl:p-10 2xl:gap-1">
         <Link href="/" className="flex mb-5 cursor-pointer items-center gap-3">
           <Image
