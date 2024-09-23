@@ -15,9 +15,8 @@ export const Sidebar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="w-fit bg-primary-white sticky left-0 top-0 flex h-screen flex-col justify-between border-r border-gray-200 text-white max-md:hidden 2xl:w-[355px]">
-      {/* w-[19rem] w-fit */}
-      <nav className="flex flex-col gap-3 pt-10 pl-10 sm:p-6 xl:p-10">
+    <div className="w-fit bg-primary-white sticky left-0 top-0 flex h-fit flex-col justify-between border-r border-gray-200 text-white max-md:hidden 2xl:w-[355px]">
+      <nav className="flex flex-col gap-3 pt-10 pl-10 sm:p-6 xl:p-10 2xl:gap-1">
         <Link href="/" className="flex mb-5 cursor-pointer items-center gap-3">
           <Image
             src="/icons/tennis-logo.svg"
@@ -76,7 +75,7 @@ export const Sidebar = () => {
 
       <div className="flex-col px-6 mb-6 hidden xl:block">
         <div className="flex flex-col items-center relative">
-          <div className="flex flex-col items-center w-64 h-72 bg-primary-gray rounded-[30px] relative 2xl:hidden">
+          <div className="flex flex-col items-center w-64 h-72 bg-primary-gray rounded-[30px] relative">
             <Image
               src="/assets/pro-feature-lock.svg"
               alt="Pro Features"
@@ -90,7 +89,7 @@ export const Sidebar = () => {
               for more features
             </p>
           </div>
-          <Button className="w-[230px] h-[54px] rounded-2xl bg-primary-blue font-medium hover:bg-primary-blue/90 transition text-primary-white absolute bottom-[10px] 2xl:-mb-6">
+          <Button className="w-[230px] h-[54px] rounded-2xl bg-primary-blue font-medium hover:bg-primary-blue/90 transition text-primary-white absolute bottom-[10px]">
             Upgrade
           </Button>
         </div>
