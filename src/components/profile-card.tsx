@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export const ProfileSidebar = () => {
+export const ProfileCard = () => {
   return (
-    <div className="flex flex-col sticky w-[400px] h-[537px] rounded-[30px] bg-primary-white">
+    <div className="flex flex-col sticky w-[400px] h-[537px] rounded-[30px] bg-primary-white max-2xl:hidden">
       <div className="flex flex-col relative">
         <Image
-          src="/assets/profile-sidebar-wave.svg"
+          src="/assets/profile-card-wave.svg"
           alt="Wave"
           width={400}
           height={200}
@@ -18,7 +18,7 @@ export const ProfileSidebar = () => {
           </h1>
           <div className="flex items-center gap-[10px]">
             <Image
-              src="/icons/profile-flag.svg"
+              src="/icons/flags/indonesia.svg"
               alt="Flag"
               width={24}
               height={24}
@@ -34,7 +34,7 @@ export const ProfileSidebar = () => {
         <div className="flex flex-col gap-2">
           <h1 className="font-semibold text-base">Biography</h1>
           <Image
-            src="/assets/profile-card-picture.svg"
+            src="/assets/profile-avatar.svg"
             alt="Profile"
             width={50}
             height={60}

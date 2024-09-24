@@ -35,6 +35,7 @@ const config: Config = {
         "light-text": "#B9C0DE",
         "blue-text": "#1C4EFF",
         "page-header": "#3C3F88",
+        "light-white": "#BACCFD",
       },
     },
     extend: {

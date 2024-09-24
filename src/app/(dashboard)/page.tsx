@@ -1,5 +1,6 @@
 import { PageHeader } from "../../components/page-header";
-import { ProfileSidebar } from "../../components/profile-sidebar";
+import { ProfileCard } from "../../components/profile-card";
+import { NextMatchCard } from "@/components/next-match-card";
 
 export default function DashboardPage() {
   return (
@@ -8,8 +9,15 @@ export default function DashboardPage() {
         <header>
           <PageHeader />
         </header>
-        <div className="flex justify-end">
-          <ProfileSidebar />
+
+        <div className="flex justify-between">
+          <div className="flex flex-col">
+            <NextMatchCard />
+          </div>
+
+          <div className="">
+            <ProfileCard />
+          </div>
         </div>
       </div>
     </div>
